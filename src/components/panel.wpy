@@ -1,0 +1,45 @@
+<style lang="less">
+  panel {
+      width: 100%;
+    }
+    .panel {
+      width: 100%;
+      margin-top: 20rpx;
+      padding-top: 20rpx;
+      padding-bottom: 20rpx;
+      padding-left: 50rpx;
+
+      text-align: left;
+
+      border: 1px solid #ccc;
+
+      font-size: 12px;
+
+      .title {
+        padding-bottom: 20rpx;
+
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .info {
+        padding: 15rpx;
+      }
+      .testcounter {
+        position: absolute;
+
+        margin-top: 15rpx;
+      }
+      .counterview {
+        margin-left: 120rpx;
+      }
+    }
+</style>
+<template>
+  <div class="panel">
+    <slot name="title">
+      Title
+    </slot>
+    <slot>
+    </slot>
+  </div>
+</template>
